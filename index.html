@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi 2 Anos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Botão de voltar minimalista -->
+    <button id="back-btn">&lt;</button>
+    
+    <div class="container">
+        <!-- O Avatar do Tamagotchi -->
+        <div id="avatar" class="avatar-stage">🥚</div>
+        
+        <!-- Barras de Status -->
+        <div class="stats-container">
+            <div class="stat">
+                <span class="icon">🍱</span> 
+                <div class="bar-bg"><div class="bar-fill" id="sabor-fill" style="width: 0%;"></div></div>
+            </div>
+            <div class="stat">
+                <span class="icon">💖</span> 
+                <div class="bar-bg"><div class="bar-fill" id="afeto-fill" style="width: 0%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Área para inserir os códigos das fichas físicas -->
+        <div class="input-section">
+            <input type="text" id="token-input" placeholder="Insira a Ficha...">
+            <button id="submit-token">Evoluir</button>
+        </div>
+        
+        <p id="message-log"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
